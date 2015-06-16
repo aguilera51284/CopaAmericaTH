@@ -1,0 +1,20 @@
+{
+  "name": "CopaAmericaTabHOY",
+  "version": "0.0.0",
+  "authors": [
+    "Arturo Aguilera Quintal <aguileraarturo1@hotmail.com>"
+  ],
+  "description": "\"Especial de la Copa America para el Periodico Tabasco HOY\"",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "yui"
+  ],
+  "license": "MIT",
+  "homepage": "www.tabascohoy.com/2/deportes/copamerica2015",
+  "dependencies": {
+    "normalize.css": "~3.0.3",
+    "material-shadows": "~2.0.1"
+  }
+}

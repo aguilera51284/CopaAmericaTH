@@ -1,0 +1,58 @@
+/**
+ * Componente - HeroPage 
+ */
+.ThoyCa_HeroPage
+	background-image url('http://ftpgrupocanton.com/dev/images/cpafon.jpg')
+	background-position 50% 50%
+	background-repeat no-repeat
+	background-size cover
+	height 100%
+	height 100vh
+	min-height 100%
+	width 100% 
+	margin 0
+	display block
+	position relative
+	/*Bug Movil Rezaise (Temporal)*/
+	transition height 999999s linear
+	&:before
+		content " "
+		width 100%
+		height 100%
+		position absolute
+		display block
+		top 0
+		left 0
+		background-color transparencia-fondo
+	/*SubComponente - HeroPage-ContText */
+	.ThoyCa_HeroPage-ContText
+		width auto
+		display block
+		position absolute
+		height auto
+		top 50%
+		left 50%
+		transform translate(-50%,-50%)
+		figure
+			width 200px
+			height 200px
+			border-radius 50%
+			background-color texto-blanco
+			display block
+			position relative
+			padding 25px
+			text-align center
+			margin 0 auto
+			img
+				display block
+				margin 0 auto
+				max-width 95%
+		h1
+			font-size 3rem
+			height 3rem
+			text-align center
+			color texto-blanco
+			font-weight 300
+			threedText(8, rgba(0, 0, 0, .1), .50, 0.5, 0.35)	
+			span
+				font-weight bold

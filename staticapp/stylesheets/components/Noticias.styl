@@ -1,0 +1,69 @@
+.Loader_Noticias
+	position relative
+	width 100%
+	display block
+	transition all 600ms animation-1
+	backface-visibility hidden
+	perspective 1000
+	transform translate3d(0, 0, 0)
+	figure
+		height 0
+		display block
+		overflow hidden
+		position relative
+		width 100%
+		margin 0
+		padding 0
+		padding-bottom 56.25% /* our ratio for this image, you can adjust this accordingly */
+		background-color #4f5a65
+		img
+			position absolute
+			top 0
+			margin 0
+			left 0
+			width 100%
+	.Loader_Noticias-Cont
+		width 100%
+		display block
+		position relative
+		box-sizing border-box
+		padding 20px
+		h1
+			font-size 2rem
+			font-family 'PT Sans Caption', sans-serif
+		p
+			color texto-secundario
+			font-size 1.8rem
+		.Noticias_Actions
+			flexdiv(space-between,center,null,false)
+			position relative
+			span,a
+				display block
+			span
+				font-size 1.2rem
+				color texto-secundario
+			a
+				text-decoration none
+				color primario
+				font-size 2rem
+				font-weight bold
+		/*Texto Simulado*/
+		.L-sh1
+			width 50%
+			height 20px
+			background-color #BFC4C8
+			display block
+		.L-sh2
+			width 100%
+			height 10px
+			margin 10px 0
+			background-color #dadfe1
+			&:first-child
+				margin-top 20px
+		.L-sbu
+			width 150px
+			height 40px 
+			background-color #e7e8ea
+			margin 20px 0 0 auto 
+
+	

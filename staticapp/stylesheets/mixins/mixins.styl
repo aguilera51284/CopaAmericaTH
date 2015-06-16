@@ -1,0 +1,32 @@
+flexdiv($just,$ali-items,$align-content,$wrap)
+	display flex
+	if $just == null
+		justify-content flex-start
+	else
+		justify-content $just
+	
+	if $ali-items == null
+		align-items flex-start
+	else
+		align-items $ali-items
+	
+	if $align-content == null
+		align-content flex-start
+	else
+		align-content $align-content
+	
+	if $wrap
+		flex-wrap wrap
+
+threedText($depth, $startColor, $colorTransitionIncrementor, $xDirection, $yDirection) {
+  $shadow = ''
+  for $i in (0..$depth) {
+    $stepColor = lightness($startColor, lightness($startColor) + ($i * $colorTransitionIncrementor))
+    if (($depth - $i) >= 1) {
+      $shadow = $shadow + ($xDirection * $i) + 'px ' + ($yDirection * $i) + 'px ' +  '0px ' + $stepColor + ', '
+    } else {
+      $shadow = $shadow + ($xDirection * $i) + 'px ' + ($yDirection * $i) + 'px ' +  '0px ' + $stepColor
+    }
+  } 
+  text-shadow unquote($shadow)
+}
